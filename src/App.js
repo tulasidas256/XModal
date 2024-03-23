@@ -25,12 +25,12 @@ function App() {
   /* --- Handle click inside/outside --- */
   const handleClick = (e) => {
     if (!ref.current.contains(e.target)) {
-      console.log("inside click => ", e.target);
+      console.log("Outside click => ", e.target);
       closeForm();
     }
   }
 
-  /* --- for add data form form --- */
+  /* --- For add data form form --- */
   const handleChange = (e) => {
     setData({
       ...data,
